@@ -43,6 +43,9 @@
     font-weight: 300;
     color: #dcdcdc;
 }
+.user-list > ul > li {
+    padding: 5px 0px;
+}
 .user-list > ul > li:hover {
     color: white;
     cursor: pointer;

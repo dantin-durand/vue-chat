@@ -2,9 +2,6 @@ import Message from "./Message.js";
 import Users from "./Users.js";
 
 const Chat = {
-    props: {
-        usernameList:  Array,
-    },
     data() {
         return {
             pseudo: faker.internet.userName(),
@@ -53,7 +50,7 @@ const Chat = {
                 <button>Envoyer</button>
             </form>
         </div>
-        <Users :usernameList="this.usernameList" :pseudo="this.pseudo"/>
+        <Users :pseudo="this.pseudo"/>
     `,
   };
   

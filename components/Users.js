@@ -2,9 +2,9 @@ import User from "./User.js";
 
 const Users = {
     props: {
-        usernameList:  Array,
         pseudo: String,
     },
+    inject: ['usernameList'],
     components: {
         User,
     },
