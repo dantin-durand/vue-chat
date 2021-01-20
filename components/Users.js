@@ -1,14 +1,25 @@
 import User from "./User.js";
 
 const Users = {
-    props: {
-        pseudo: String,
-    },
-    inject: ['usernameList'],
-    components: {
-        User,
-    },
-    template: `
+  props: {
+    pseudo: String,
+  },
+  data() {
+    return {
+      usernameList: [],
+    };
+  },
+  mounted() {
+    setInterval(() => {
+      const username = faker.internet.userName();
+      this.usernameList.push(username);
+      this.$bus.emit("send-notification", username);
+    }, 2000);
+  },
+  components: {
+    User,
+  },
+  template: `
         <div id="sidebar" class="col s3 sidebar">
             <div class="user-list">
                 <p class="online-title">EN LIGNE - <b>{{ Object.keys(this.usernameList).length }}</b></p>
@@ -21,6 +32,6 @@ const Users = {
             </div>
         </div>
     `,
-  };
-  
-  export default Users;
+};
+
+export default Users;
