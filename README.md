@@ -1,12 +1,12 @@
-#Vue chat
+# Vue chat
 
 Créer l'interface d'un chat qui utilise Vue.
 
-###Démarrage
+### Démarrage
 
 Pour lancer le projet, il est nécessaire d'utiliser un serveur http.
 
-###Architecture
+### Architecture
 
 - `index.html`
 - `App.js`
