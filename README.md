@@ -24,3 +24,6 @@ Pour lancer le projet, il est nécessaire d'utiliser un serveur http.
 	- `nomessage.svg`
 	- `style.css`
 
+### Démo
+
+lien de la démo: http://vue-chat.webstart.dantindurand.fr/
